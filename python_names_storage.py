@@ -21,6 +21,7 @@ credentials_dict = {
 }
 
 try:
+  
   """Uploads a file to the bucket."""
   credentials = service_account.Credentials.from_service_account_info(credentials_dict)
   storage_client = storage.Client(credentials)
